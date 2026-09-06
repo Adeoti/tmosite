@@ -41,7 +41,7 @@
     <div class="tmo-form__field">
         <label for="content-editor">Content</label>
         <div id="content-editor" class="admin-editor" data-rich-editor="content"></div>
-        <textarea id="content" name="content" hidden required>{{ old('content', $post->content ?? '') }}</textarea>
+        <textarea id="content" name="content" hidden>{{ old('content', $post->content ?? '') }}</textarea>
     </div>
 
     <div class="tmo-form__field">
