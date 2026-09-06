@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Admin') &middot; TMO Ultimate</title>
+    <link rel="icon" href="{{ asset('favicon.ico') }}" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon-32x32.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
+    <meta name="theme-color" content="#0B2545">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://cdnjs.cloudflare.com/ajax/libs/quill/1.3.7/quill.snow.min.css" rel="stylesheet">
     <style>
