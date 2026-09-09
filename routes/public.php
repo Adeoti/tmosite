@@ -12,7 +12,8 @@ use App\Http\Controllers\Public\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-
+Route::get('/annual-report', [PageController::class, 'annualReport'])
+    ->name('annual-report');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/services', [PageController::class, 'services'])->name('services');
 Route::get('/passive-income', [PageController::class, 'passiveIncome'])->name('passive-income');

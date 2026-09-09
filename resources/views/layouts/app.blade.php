@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="48x48" href="{{ asset('favicon-48x48.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
-    <meta name="theme-color" content="#0B2545">
+    <meta name="theme-color" content="#0e6b50">
     <link rel="alternate" type="application/rss+xml" title="{{ \App\Models\Setting::get('site_name') }} Blog"
         href="{{ route('blog.feed') }}">
 

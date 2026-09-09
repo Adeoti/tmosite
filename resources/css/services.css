@@ -31,7 +31,7 @@
 
 .tmo-service-detail__copy h2 {
     margin: 18px 0 20px;
-    color: var(--color-navy);
+    color: var(--color-forest);
     font-size: clamp(32px, 4vw, 48px);
     line-height: 1.05;
     letter-spacing: -.04em;
@@ -50,7 +50,7 @@
     aspect-ratio: 4 / 3;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    background: var(--color-navy);
+    background: var(--color-forest);
 }
 
 .tmo-service-detail__visual img {
@@ -69,7 +69,7 @@
     height: 100%;
     display: grid;
     place-items: center;
-    color: rgba(var(--color-gold-rgb), .4);
+    color: rgba(var(--color-champagne-rgb), .4);
 }
 
 .tmo-service-detail__placeholder svg {
@@ -83,12 +83,12 @@
     border-radius: inherit;
     pointer-events: none;
     box-shadow: inset 0 0 0 1px rgba(var(--color-white-rgb), .1);
-    border: 1px solid rgba(var(--color-gold-rgb), 0);
+    border: 1px solid rgba(var(--color-champagne-rgb), 0);
     transition: border-color .5s ease;
 }
 
 .tmo-service-detail:hover .tmo-service-detail__ring {
-    border-color: rgba(var(--color-gold-rgb), .4);
+    border-color: rgba(var(--color-champagne-rgb), .4);
 }
 
 .tmo-services-faq {
@@ -113,7 +113,7 @@
 }
 
 .tmo-faq-item[open] {
-    border-color: var(--color-border-gold);
+    border-color: var(--color-border-green);
     box-shadow: var(--shadow-soft);
 }
 
@@ -123,7 +123,7 @@
     justify-content: space-between;
     gap: 20px;
     padding: 22px 0;
-    color: var(--color-navy);
+    color: var(--color-forest);
     font-family: var(--font-heading);
     font-size: 15px;
     font-weight: 700;
@@ -139,7 +139,7 @@
     flex: 0 0 auto;
     width: 18px;
     height: 18px;
-    color: var(--color-gold);
+    color: var(--color-champagne);
     transition: transform .35s var(--ease);
 }
 

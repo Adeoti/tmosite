@@ -7,7 +7,7 @@
     background:
         radial-gradient(
             circle at 50% 15%,
-            rgba(var(--color-gold-rgb), .16),
+            rgba(var(--color-champagne-rgb), .16),
             transparent 26%
         ),
         var(--color-black);

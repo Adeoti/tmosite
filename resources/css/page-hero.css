@@ -11,14 +11,12 @@
 }
 
 .tmo-page-hero--dark {
+    color: var(--color-ivory);
     background:
-        radial-gradient(
-            circle at 78% 30%,
-            rgba(var(--color-gold-rgb), .14),
-            transparent 26%
-        ),
-        var(--color-black);
-    color: #fff;
+        radial-gradient(circle at 72% 45%, rgba(var(--color-emerald-rgb), .16), transparent 25%),
+        radial-gradient(circle at 86% 20%, rgba(var(--color-cobalt-rgb), .12), transparent 23%),
+        radial-gradient(circle at 58% 85%, rgba(var(--color-apricot-rgb), .08), transparent 25%),
+        var(--color-ink);
 }
 
 .tmo-page-hero__grid {
@@ -27,8 +25,8 @@
     opacity: .18;
     pointer-events: none;
     background-image:
-        linear-gradient(rgba(var(--color-navy-rgb), .05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(var(--color-navy-rgb), .05) 1px, transparent 1px);
+        linear-gradient(rgba(var(--color-ink-rgb), .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--color-ink-rgb), .05) 1px, transparent 1px);
     background-size: 80px 80px;
     mask-image: linear-gradient(to bottom, #000 0%, transparent 85%);
 }
@@ -59,7 +57,7 @@
 }
 
 .tmo-page-hero--paper h1 {
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 .tmo-page-hero--dark h1 {
@@ -102,9 +100,9 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
-    background: rgba(var(--color-gold-rgb), .12);
-    border: 1px solid rgba(var(--color-gold-rgb), .3);
-    color: var(--color-gold-bright);
+    background: rgba(var(--color-champagne-rgb), .12);
+    border: 1px solid rgba(var(--color-champagne-rgb), .3);
+    color: var(--color-apricot);
 }
 
 .tmo-page-hero__icon svg {

@@ -1,68 +1,68 @@
 :root {
-    --color-black: #07090b;
-    --color-black-soft: #0b0e11;
-    --color-charcoal: #11161a;
-    --color-charcoal-light: #171d22;
-    --color-black-rgb: 7, 9, 11;
-
-    --color-paper: #f5f3ee;
-    --color-paper-warm: #ebe7de;
+    --color-ink: #071311;
+    --color-ink-deep: #04100d;
+    --color-ink-soft: #0b1d18;
+    --color-forest: #0e6b50;
+    --color-emerald: #15966b;
+    --color-mint: #66e0b0;
+    --color-cobalt: #4267ff;
+    --color-azure: #55b8ff;
+    --color-apricot: #ffb36b;
+    --color-champagne: #f3d6a0;
+    --color-ivory: #f7f5ef;
+    --color-paper: #efede5;
     --color-white: #ffffff;
+
+    --color-black: #050807;
+    --color-black-soft: #09110f;
+    --color-charcoal: #101a17;
+    --color-charcoal-light: #17231f;
+
+    --color-ink-rgb: 7, 19, 17;
+    --color-forest-rgb: 14, 107, 80;
+    --color-emerald-rgb: 21, 150, 107;
+    --color-mint-rgb: 102, 224, 176;
+    --color-cobalt-rgb: 66, 103, 255;
+    --color-azure-rgb: 85, 184, 255;
+    --color-apricot-rgb: 255, 179, 107;
+    --color-champagne-rgb: 243, 214, 160;
+    --color-ivory-rgb: 247, 245, 239;
     --color-white-rgb: 255, 255, 255;
+    --color-black-rgb: 5, 8, 7;
 
-    --color-ink: #101418;
-    --color-ink-soft: #424951;
-    --color-muted: #737b83;
-    --color-muted-dark: #a6adb3;
-    --color-ink-rgb: 16, 20, 24;
+    --color-paper-warm: #e5e1d6;
+    --color-ink-soft-text: #53605b;
+    --color-muted: #77827d;
+    --color-muted-dark: #aab4ae;
 
-    --color-navy: #0d2a43;
-    --color-navy-deep: #081b2e;
-    --color-navy-rgb: 13, 42, 67;
-    --color-navy-deep-rgb: 8, 27, 46;
+    --color-border: rgba(var(--color-ink-rgb), .11);
+    --color-border-dark: rgba(var(--color-white-rgb), .12);
+    --color-border-green: rgba(var(--color-emerald-rgb), .28);
+    --color-border-blue: rgba(var(--color-cobalt-rgb), .28);
 
-    --color-gold: #e0a83e;
-    --color-gold-bright: #f7cd6a;
-    --color-gold-soft: #b8862a;
-    --color-gold-pale: #fbe8bf;
-    --color-gold-rgb: 224, 168, 62;
-    --color-gold-bright-rgb: 247, 205, 106;
-    --color-gold-soft-rgb: 184, 134, 42;
+    --color-whatsapp: #15966b;
+    --color-whatsapp-dark: #0b5b43;
+    --color-whatsapp-bright: #22b77f;
 
-    --color-green: #1f9e6d;
-    --color-green-dark: #0d3f2c;
-    --color-green-bright: #3fd696;
-    --color-green-rgb: 31, 158, 109;
-    --color-green-bright-rgb: 63, 214, 150;
-
-    --color-border: rgba(var(--color-ink-rgb), .10);
-    --color-border-dark: rgba(var(--color-white-rgb), .11);
-    --color-border-gold: rgba(var(--color-gold-rgb), .35);
-
-    --color-whatsapp: #128c7e;
-    --color-whatsapp-dark: #0f3d2e;
-    --color-whatsapp-bright: #1d8f62;
-    --color-whatsapp-brighter: #24a872;
-
-    --color-status-success-bg: #e7f6ec;
-    --color-status-success-text: #1b5e20;
-    --color-status-error-bg: #fdecec;
+    --color-status-success-bg: #e5f6ee;
+    --color-status-success-text: #14613f;
+    --color-status-error-bg: #fdeceb;
     --color-status-error-text: #b42318;
     --color-status-error-text-dark: #7a2626;
-    --color-status-warning-bg: #fef3e2;
-    --color-status-warning-text: #b54708;
-    --color-status-neutral-bg: #f2f4f7;
-    --color-status-neutral-text: #667085;
+    --color-status-error-rgb: 180, 35, 24;
+    --color-status-warning-bg: #fff2df;
+    --color-status-warning-text: #a95b08;
+    --color-status-neutral-bg: #eef1ef;
+    --color-status-neutral-text: #65716c;
 
-    --color-chat-bg: #101513;
-    --color-chat-header: #0f3d2e;
-    --color-chat-text: #f4f1e8;
-    --color-status-error-rgb: 178, 58, 58;
-    --color-chat-accent: #c9a84c;
-    --color-chat-badge: #8b1a4a;
-    --color-chat-bg-rgb: 16, 21, 19;
-    --color-chat-text-rgb: 244, 241, 232;
-    --color-chat-accent-rgb: 201, 168, 76;
+    --color-chat-bg: #0a1512;
+    --color-chat-header: #0e6b50;
+    --color-chat-text: #f7f5ef;
+    --color-chat-accent: #ffb36b;
+    --color-chat-badge: #4267ff;
+    --color-chat-bg-rgb: 10, 21, 18;
+    --color-chat-text-rgb: 247, 245, 239;
+    --color-chat-accent-rgb: 255, 179, 107;
 
     --font-heading: 'Manrope', sans-serif;
     --font-body: 'DM Sans', sans-serif;
@@ -74,9 +74,29 @@
     --radius-md: 16px;
     --radius-lg: 24px;
     --radius-xl: 36px;
+    --radius-2xl: 48px;
 
     --ease: cubic-bezier(.22, 1, .36, 1);
+    --ease-smooth: cubic-bezier(.16, 1, .3, 1);
 
-    --shadow-soft: 0 20px 70px rgba(var(--color-black-rgb), .08);
-    --shadow-dark: 0 30px 90px rgba(var(--color-black-rgb), .35);
+    --shadow-soft: 0 24px 80px rgba(var(--color-black-rgb), .08);
+    --shadow-dark: 0 36px 100px rgba(var(--color-black-rgb), .28);
+
+
+    --color-navy: var(--color-forest);
+    --color-navy-deep: var(--color-ink-deep);
+
+    --color-navy-rgb: var(--color-forest-rgb);
+    --color-navy-deep-rgb: var(--color-ink-rgb);
+
+    --color-gold: var(--color-champagne);
+    --color-gold-bright: var(--color-apricot);
+    --color-gold-soft: var(--color-forest);
+    --color-gold-light: var(--color-champagne);
+    --color-gold-rgb: var(--color-champagne-rgb);
+
+    --color-green: var(--color-emerald);
+    --color-green-dark: var(--color-forest);
+    --color-green-bright: var(--color-mint);
+    --color-green-rgb: var(--color-emerald-rgb);
 }

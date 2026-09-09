@@ -12,127 +12,114 @@
    ========================================================= --}}
     <section class="tmo-hero">
 
-        <div class="tmo-hero__orb tmo-hero__orb--one"></div>
-        <div class="tmo-hero__orb tmo-hero__orb--two"></div>
-        <div class="tmo-hero__grid"></div>
+    <div class="tmo-hero__noise"></div>
+    <div class="tmo-hero__glow"></div>
 
-        <div class="container tmo-hero__inner">
+    <div class="container tmo-hero__inner">
 
-            <div class="tmo-hero__content">
+        <div class="tmo-hero__content">
 
-                <div class="tmo-kicker">
-                    <span class="tmo-kicker__dot"></span>
-                    TMO Ultimate Innovations
-                </div>
-
-                <h1>
-                    We build the
-                    <span>systems behind</span>
-                    ambitious businesses.
-                </h1>
-
-                <p>
-                    {{ \App\Models\Setting::get(
-                        'hero_subheadline',
-                        'AI-powered commerce, cinematic content, 3D experiences and intelligent automation — designed to move your business forward.',
-                    ) }}
-                </p>
-
-                <div class="tmo-hero__actions">
-
-                    <a href="{{ route('booking') }}" class="tmo-btn tmo-btn--light">
-                        Start a Project
-
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 12h14" />
-                            <path d="m13 6 6 6-6 6" />
-                        </svg>
-                    </a>
-
-                    <a href="{{ route('portfolio.index') }}" class="tmo-btn tmo-btn--ghost">
-                        Explore Our Work
-                    </a>
-
-                </div>
-
+            <div class="tmo-kicker">
+                <span class="tmo-kicker__dot"></span>
+                TMO Ultimate Innovations
             </div>
 
+            <h1>
+                We build the
+                <span>systems behind</span>
+                ambitious businesses.
+            </h1>
 
-            <div class="tmo-hero__visual" aria-hidden="true">
+            <p>
+                {{ \App\Models\Setting::get(
+                    'hero_subheadline',
+                    'AI-powered commerce, cinematic content, 3D experiences and intelligent automation — designed to move your business forward.',
+                ) }}
+            </p>
 
-                <div class="tmo-hero-card tmo-hero-card--main">
+            <div class="tmo-hero__actions">
 
-                    <div class="tmo-hero-card__top">
-                        <span>INNOVATION SYSTEM</span>
+                <a href="{{ route('booking') }}" class="tmo-btn tmo-btn--light">
+                    Start a Project
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M5 12h14" />
+                        <path d="m13 6 6 6-6 6" />
+                    </svg>
+                </a>
 
-                        <span class="tmo-hero-card__status">
-                            <i></i>
-                            LIVE
-                        </span>
-                    </div>
-
-                    <div class="tmo-hero-card__sphere">
-                        <div class="tmo-sphere"></div>
-
-                        <div class="tmo-sphere__ring tmo-sphere__ring--one"></div>
-                        <div class="tmo-sphere__ring tmo-sphere__ring--two"></div>
-                        <div class="tmo-sphere__ring tmo-sphere__ring--three"></div>
-                    </div>
-
-                    <div class="tmo-hero-card__bottom">
-                        <span>AI</span>
-                        <span>COMMERCE</span>
-                        <span>3D</span>
-                        <span>AUTOMATION</span>
-                    </div>
-
-                </div>
-
-
-                <div class="tmo-floating-card tmo-floating-card--top">
-                    <span class="tmo-floating-card__label">
-                        DIGITAL
-                    </span>
-
-                    <strong>01</strong>
-                </div>
-
-
-                <div class="tmo-floating-card tmo-floating-card--bottom">
-                    <span class="tmo-floating-card__label">
-                        INTELLIGENT
-                    </span>
-
-                    <strong>∞</strong>
-                </div>
+                <a href="{{ route('portfolio.index') }}" class="tmo-btn tmo-btn--ghost">
+                    Explore Our Work
+                </a>
 
             </div>
 
         </div>
 
+        <div class="tmo-hero__visual" aria-hidden="true">
 
-        <div class="tmo-hero__bottom">
+            <div class="tmo-system">
 
-            <div class="container">
+                <div class="tmo-system__canvas"></div>
 
-                <div class="tmo-hero__scroll">
-                    <span>Scroll to explore</span>
-                    <div class="tmo-hero__scroll-line"></div>
+                <div class="tmo-system__top">
+                    <span>TMO / INNOVATION FIELD</span>
+
+                    <span class="tmo-system__status">
+                        <i></i>
+                        SYSTEM ACTIVE
+                    </span>
                 </div>
 
-                <div class="tmo-hero__statement">
-                    <span>01</span>
-                    <p>
-                        Technology should create momentum, not complexity.
-                    </p>
+                <span class="tmo-system__label tmo-system__label--one">
+                    AI SYSTEMS
+                </span>
+
+                <span class="tmo-system__label tmo-system__label--two">
+                    DIGITAL COMMERCE
+                </span>
+
+                <span class="tmo-system__label tmo-system__label--three">
+                    AUTOMATION
+                </span>
+
+                <div class="tmo-system__crosshair"></div>
+
+                <div class="tmo-system__bottom">
+                    <span>STRATEGY / DESIGN / TECHNOLOGY</span>
+                    <span>01 — 04</span>
                 </div>
 
             </div>
 
+            <div class="tmo-hero__microcopy">
+                <strong>Built around momentum</strong>
+                Digital systems designed to connect ideas, people, technology and measurable growth.
+            </div>
+
         </div>
 
-    </section>
+    </div>
+
+    <div class="tmo-hero__bottom">
+        <div class="container">
+
+            <div class="tmo-hero__scroll">
+                <span>Scroll to explore</span>
+                <div class="tmo-hero__scroll-line"></div>
+            </div>
+
+            <div class="tmo-hero__statement">
+                <span>01</span>
+                <p>Technology should create momentum, not complexity.</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
 
     <section class="tmo-stats">
         <div class="container tmo-stats__grid">

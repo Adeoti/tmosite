@@ -16,6 +16,7 @@ use Throwable;
 
 class BookingController extends Controller
 {
+    
     public function store(StoreBookingRequest $request): RedirectResponse
     {
         $booking = Booking::create($request->validated() + [

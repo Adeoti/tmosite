@@ -109,6 +109,7 @@
 }
 
 .tmo-hero h1 span {
+    font-size: clamp(68px, 7vw, 96px);
     display: inline;
     color: var(--color-mint);
 }

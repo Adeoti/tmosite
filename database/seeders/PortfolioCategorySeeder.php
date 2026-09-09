@@ -1,6 +1,5 @@
 <?php
 
-// php artisan make:seeder PortfolioCategorySeeder
 
 namespace Database\Seeders;
 

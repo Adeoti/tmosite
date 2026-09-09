@@ -1,6 +1,5 @@
 <?php
 
-// php artisan make:model PortfolioCategory
 
 namespace App\Models;
 

@@ -27,7 +27,7 @@
             >
                 <div class="hero-carousel__scrim"></div>
                 <div class="container hero-carousel__content">
-                    <div class="eyebrow" style="color: var(--color-gold-light);">Innovate | Empower | Elevate</div>
+                    <div class="eyebrow" style="color: var(--color-champagne);">Innovate | Empower | Elevate</div>
                     <h1 class="hero-carousel__headline">{{ $slide->headline }}</h1>
                     @if (!empty($slide->subheadline))
                         <p class="hero-carousel__subhead">{{ $slide->subheadline }}</p>

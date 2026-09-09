@@ -61,7 +61,7 @@
                     </svg>
 
                     <span>
-                        {{ $whatsappDisplay ?? 'Chat on WhatsApp' }}
+                        Chat on WhatsApp
                     </span>
 
                 </a>

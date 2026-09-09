@@ -1,6 +1,6 @@
 .tmo-stats {
     padding: 60px 0;
-    background: var(--color-black);
+    background: var(--color-ink);
     border-top: 1px solid var(--color-border-dark);
     border-bottom: 1px solid var(--color-border-dark);
 }
@@ -22,7 +22,7 @@
 
 .stat-counter strong {
     display: block;
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
     font-family: var(--font-display);
     font-size: clamp(38px, 4vw, 56px);
     font-weight: 500;

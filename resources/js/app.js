@@ -1,3 +1,4 @@
+import './hero-system';
 import { initScrollAnimations } from './modules/animations';
 import { initNav } from './modules/nav';
 import { initChatWidget } from './modules/chat-widget';

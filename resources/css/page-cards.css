@@ -1,13 +1,13 @@
 .tmo-btn--outline-light {
-    border-color: rgba(var(--color-navy-rgb), .22);
+    border-color: rgba(var(--color-ink-rgb), .22);
     background: transparent;
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 .tmo-btn--outline-light:hover {
-    border-color: var(--color-gold);
-    background: rgba(var(--color-gold-rgb), .08);
-    color: var(--color-gold-soft);
+    border-color: var(--color-champagne);
+    background: rgba(var(--color-champagne-rgb), .08);
+    color: var(--color-forest);
 }
 
 .tmo-card {
@@ -25,7 +25,7 @@
 
 .tmo-card h3 {
     margin: 0 0 12px;
-    color: var(--color-navy);
+    color: var(--color-forest);
     font-size: 21px;
 }
 

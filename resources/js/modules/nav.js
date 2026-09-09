@@ -34,7 +34,15 @@ export function initNav() {
     overlay?.addEventListener('click', closeMenu);
 
     links.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', closeMenu);
+        link.addEventListener('click', (event) => {
+
+
+            if (link.hasAttribute('data-nav-dropdown-trigger')) {
+                return;
+            }
+
+            closeMenu();
+        });
     });
 
     document.addEventListener('keydown', (event) => {

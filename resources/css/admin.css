@@ -10,7 +10,7 @@ body.tmo-admin-body {
 .admin-sidebar {
     width: 272px;
     flex-shrink: 0;
-    background: linear-gradient(190deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
+    background: linear-gradient(190deg, var(--color-forest) 0%, var(--color-ink-deep) 100%);
     color: #fff;
     padding: 28px 18px;
     display: flex;
@@ -112,7 +112,7 @@ body.tmo-admin-body {
     width: 4px;
     height: 22px;
     border-radius: 0 4px 4px 0;
-    background: var(--color-gold);
+    background: var(--color-champagne);
 }
 
 .admin-sidebar__footer {
@@ -145,7 +145,7 @@ body.tmo-admin-body {
 .admin-topbar__eyebrow {
     display: block;
     margin-bottom: 4px;
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: .12em;
@@ -156,7 +156,7 @@ body.tmo-admin-body {
     margin: 0;
     font-size: 20px;
     font-family: var(--font-heading);
-    color: var(--color-navy);
+    color: var(--color-forest);
     letter-spacing: -.02em;
 }
 
@@ -176,8 +176,8 @@ body.tmo-admin-body {
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    background: var(--color-gold);
-    color: var(--color-navy-deep);
+    background: var(--color-champagne);
+    color: var(--color-ink-deep);
     font-family: var(--font-heading);
     font-weight: 700;
     font-size: 13px;
@@ -189,7 +189,7 @@ body.tmo-admin-body {
 .admin-user-chip__name {
     font-size: 13px;
     font-weight: 600;
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 .admin-logout-btn {
@@ -200,7 +200,7 @@ body.tmo-admin-body {
     border-radius: 999px;
     border: 1px solid var(--color-border);
     background: #fff;
-    color: var(--color-navy);
+    color: var(--color-forest);
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
@@ -208,7 +208,7 @@ body.tmo-admin-body {
 }
 
 .admin-logout-btn:hover {
-    border-color: var(--color-navy);
+    border-color: var(--color-forest);
     background: #f5f6f9;
     transform: translateY(-1px);
 }
@@ -255,7 +255,7 @@ body.tmo-admin-body {
 .admin-stat-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-soft);
-    border-color: var(--color-border-gold);
+    border-color: var(--color-border-green);
 }
 
 .admin-stat-card__icon {
@@ -266,18 +266,18 @@ body.tmo-admin-body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    background: rgba(var(--color-navy-rgb), .08);
-    color: var(--color-navy);
+    background: rgba(var(--color-ink-rgb), .08);
+    color: var(--color-forest);
 }
 
 .admin-stat-card__icon--gold {
-    background: rgba(var(--color-gold-rgb), .14);
-    color: var(--color-gold-soft);
+    background: rgba(var(--color-champagne-rgb), .14);
+    color: var(--color-forest);
 }
 
 .admin-stat-card__icon--green {
-    background: rgba(var(--color-green-rgb), .14);
-    color: var(--color-green);
+    background: rgba(var(--color-emerald-rgb), .14);
+    color: var(--color-emerald);
 }
 
 .admin-stat-card__icon--rose {
@@ -300,7 +300,7 @@ body.tmo-admin-body {
 .admin-stat-card strong {
     font-family: var(--font-heading);
     font-size: 26px;
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 .admin-flash {
@@ -335,20 +335,20 @@ body.tmo-admin-body {
     border-radius: 999px;
     border: 1px solid var(--color-border);
     font-size: 13px;
-    color: var(--color-navy);
+    color: var(--color-forest);
     background: #fff;
     text-decoration: none;
     transition: background .2s ease, color .2s ease, border-color .2s ease;
 }
 
 .admin-filter-tabs a:hover {
-    border-color: var(--color-border-gold);
+    border-color: var(--color-border-green);
 }
 
 .admin-filter-tabs a.is-active {
-    background: var(--color-navy);
+    background: var(--color-forest);
     color: #fff;
-    border-color: var(--color-navy);
+    border-color: var(--color-forest);
 }
 
 .admin-page-header {
@@ -364,7 +364,7 @@ body.tmo-admin-body {
     margin: 0;
     font-size: 21px;
     font-family: var(--font-heading);
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 .admin-page-header__actions {
@@ -498,7 +498,7 @@ body.tmo-admin-body {
     margin: 0 0 24px;
     padding-bottom: 18px;
     border-bottom: 1px solid var(--color-border);
-    color: var(--color-navy);
+    color: var(--color-forest);
     font-family: var(--font-heading);
     font-size: 16px;
 }

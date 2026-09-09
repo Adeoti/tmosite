@@ -1,33 +1,33 @@
-@import './variables.css';
+@import "./variables.css";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap");
 @import "./nav.css";
-@import './hero.css';
-@import './hero-animations.css';
-@import './loader.css';
-@import './stats.css';
-@import './work-showcase.css';
-@import './page-hero.css';
-@import './page-section-head.css';
-@import './page-cta.css';
-@import './page-cards.css';
-@import './about.css';
-@import './nav-theme.css';
-@import './contact-booking.css';
-@import './services.css';
-@import './passive-income.css';
-@import './legal.css';
-@import './admin.css';
-@import './admin-login.css';
-@import './admin-settings.css';
-@import './portfolio.css';
-@import './blog.css';
+@import "./hero.css";
+@import "./hero-animations.css";
+@import "./loader.css";
+@import "./stats.css";
+@import "./work-showcase.css";
+@import "./page-hero.css";
+@import "./page-section-head.css";
+@import "./page-cta.css";
+@import "./page-cards.css";
+@import "./about.css";
+@import "./nav-theme.css";
+@import "./annual-report.css";
+@import "./contact-booking.css";
+@import "./services.css";
+@import "./passive-income.css";
+@import "./legal.css";
+@import "./admin.css";
+@import "./admin-login.css";
+@import "./admin-settings.css";
+@import "./portfolio.css";
+@import "./blog.css";
+@import "./home-refresh.css";
 
 /* =========================================================
    TMO ULTIMATE INNOVATIONS
    Premium Cinematic Design System
    ========================================================= */
-
-
 
 /* =========================================================
    RESET
@@ -94,7 +94,7 @@ button {
 
 ::selection {
     color: var(--color-black);
-    background: var(--color-gold-bright);
+    background: var(--color-apricot);
 }
 
 /* =========================================================
@@ -140,7 +140,7 @@ a {
 }
 
 :focus-visible {
-    outline: 2px solid var(--color-gold);
+    outline: 2px solid var(--color-champagne);
     outline-offset: 4px;
 }
 
@@ -189,22 +189,22 @@ a {
 }
 
 .btn-primary {
-    background: var(--color-gold);
+    background: var(--color-champagne);
     color: var(--color-black);
 }
 
 .btn-primary:hover {
-    background: var(--color-gold-bright);
-    box-shadow: 0 12px 30px rgba(var(--color-gold-rgb), 0.2);
+    background: var(--color-apricot);
+    box-shadow: 0 12px 30px rgba(var(--color-champagne-rgb), 0.2);
 }
 
 .btn-whatsapp {
-    background: var(--color-whatsapp-bright);
+    background: var(--color-forest);
     color: #fff;
 }
 
 .btn-whatsapp:hover {
-    background: var(--color-whatsapp-brighter);
+    background: var(--color-whatsapp-bright);
 }
 
 .tmo-btn--light {
@@ -213,11 +213,11 @@ a {
 }
 
 .tmo-btn--light:hover {
-    background: var(--color-gold-bright);
+    background: var(--color-apricot);
 }
 
 .tmo-btn--gold {
-    background: var(--color-gold);
+    background: var(--color-champagne);
     color: var(--color-black);
 }
 
@@ -229,9 +229,9 @@ a {
 }
 
 .tmo-btn--ghost:hover {
-    border-color: var(--color-gold);
-    background: rgba(var(--color-gold-rgb), 0.1);
-    color: var(--color-gold-bright);
+    border-color: var(--color-champagne);
+    background: rgba(var(--color-champagne-rgb), 0.1);
+    color: var(--color-apricot);
 }
 
 /* =========================================================
@@ -243,7 +243,7 @@ a {
     align-items: center;
     gap: 10px;
 
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-size: 10px;
     font-weight: 700;
@@ -281,7 +281,7 @@ a {
 }
 
 .tmo-text-link:hover {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 }
 
 .tmo-text-link:hover svg {
@@ -299,7 +299,11 @@ a {
 
     color: #fff;
 
-    background: linear-gradient(to bottom, rgba(var(--color-black-rgb), 0.48), transparent);
+    background: linear-gradient(
+        to bottom,
+        rgba(var(--color-black-rgb), 0.48),
+        transparent
+    );
 }
 
 .site-nav__inner {
@@ -366,7 +370,7 @@ a {
     width: 100%;
     height: 1px;
 
-    background: var(--color-gold);
+    background: var(--color-champagne);
 
     transform: scaleX(0);
     transform-origin: right;
@@ -436,7 +440,7 @@ a {
 }
 
 .tmo-intro__eyebrow span {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 }
 
 .tmo-intro__content {
@@ -451,7 +455,7 @@ a {
 }
 
 .tmo-intro h2 em {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -485,13 +489,13 @@ a {
     max-width: 850px;
 
     margin: 20px 0 0;
-
+    color: var(--color-ink-deep);
     font-size: clamp(48px, 6vw, 82px);
     line-height: 0.98;
 }
 
 .tmo-section-head h2 span {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -573,7 +577,7 @@ a {
 }
 
 .tmo-capability__number {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-size: 10px;
     font-weight: 700;
@@ -607,7 +611,7 @@ a {
     align-items: center;
     gap: 8px;
 
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-size: 10px;
     font-weight: 700;
@@ -651,8 +655,8 @@ a {
 }
 
 .tmo-capability:hover .tmo-capability__arrow {
-    border-color: var(--color-gold);
-    background: var(--color-gold);
+    border-color: var(--color-champagne);
+    background: var(--color-champagne);
     color: var(--color-black);
     transform: rotate(-45deg);
 }
@@ -727,7 +731,7 @@ a {
     background:
         radial-gradient(
             circle at 75% 20%,
-            rgba(var(--color-gold-rgb), 0.08),
+            rgba(var(--color-champagne-rgb), 0.08),
             transparent 25%
         ),
         var(--color-black);
@@ -747,7 +751,7 @@ a {
 }
 
 .tmo-difference__intro .tmo-section-number {
-    color: var(--color-gold);
+    color: var(--color-champagne);
 }
 
 .tmo-difference__intro h2 {
@@ -760,7 +764,7 @@ a {
 }
 
 .tmo-difference__intro h2 span {
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -785,7 +789,7 @@ a {
 .tmo-difference-card {
     position: relative;
 
-    padding: 38px 0 42px;
+    padding: 38px 42px;
 
     border-bottom: 1px solid var(--color-border-dark);
 
@@ -802,7 +806,7 @@ a {
     width: 0;
     height: 1px;
 
-    background: var(--color-gold);
+    background: var(--color-champagne);
 
     transition: width 0.5s var(--ease);
 }
@@ -816,7 +820,7 @@ a {
 }
 
 .tmo-difference-card > span {
-    color: var(--color-gold);
+    color: var(--color-champagne);
 
     font-size: 10px;
     font-weight: 700;
@@ -859,7 +863,7 @@ a {
     background:
         radial-gradient(
             circle at 75% 50%,
-            rgba(var(--color-gold-rgb), 0.13),
+            rgba(var(--color-champagne-rgb), 0.13),
             transparent 24%
         ),
         linear-gradient(135deg, #101519, #07090b);
@@ -874,8 +878,15 @@ a {
     opacity: 0.22;
 
     background-image:
-        linear-gradient(rgba(var(--color-white-rgb), 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(var(--color-white-rgb), 0.04) 1px, transparent 1px);
+        linear-gradient(
+            rgba(var(--color-white-rgb), 0.04) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(var(--color-white-rgb), 0.04) 1px,
+            transparent 1px
+        );
 
     background-size: 80px 80px;
 }
@@ -893,11 +904,11 @@ a {
 
     border-radius: 50%;
 
-    border: 1px solid rgba(var(--color-gold-rgb), 0.15);
+    border: 1px solid rgba(var(--color-champagne-rgb), 0.15);
 
     box-shadow:
-        0 0 150px rgba(var(--color-gold-rgb), 0.08),
-        inset 0 0 100px rgba(var(--color-gold-rgb), 0.04);
+        0 0 150px rgba(var(--color-champagne-rgb), 0.08),
+        inset 0 0 100px rgba(var(--color-champagne-rgb), 0.04);
 }
 
 .tmo-passive .container {
@@ -916,7 +927,7 @@ a {
 }
 
 .tmo-passive__content .tmo-section-number {
-    color: var(--color-gold);
+    color: var(--color-champagne);
 }
 
 .tmo-passive__content h2 {
@@ -931,7 +942,7 @@ a {
 .tmo-passive__content h2 em {
     display: block;
 
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -961,7 +972,7 @@ a {
 
     background: radial-gradient(
         circle,
-        rgba(var(--color-gold-rgb), 0.08),
+        rgba(var(--color-champagne-rgb), 0.08),
         transparent 57%
     );
 }
@@ -969,7 +980,7 @@ a {
 .tmo-passive__ring {
     position: absolute;
 
-    border: 1px solid rgba(var(--color-gold-rgb), 0.23);
+    border: 1px solid rgba(var(--color-champagne-rgb), 0.23);
     border-radius: 50%;
 }
 
@@ -992,7 +1003,7 @@ a {
 .tmo-passive__ring--three {
     inset: 110px;
 
-    border-color: rgba(var(--color-gold-rgb), 0.17);
+    border-color: rgba(var(--color-champagne-rgb), 0.17);
 
     transform: rotateY(68deg);
 
@@ -1007,23 +1018,23 @@ a {
     align-items: center;
     justify-content: center;
 
-    border: 1px solid rgba(var(--color-gold-rgb), 0.25);
+    border: 1px solid rgba(var(--color-champagne-rgb), 0.25);
     border-radius: 50%;
 
     background: radial-gradient(
         circle at 35% 30%,
         rgba(var(--color-white-rgb), 0.15),
-        rgba(var(--color-gold-rgb), 0.04) 42%,
+        rgba(var(--color-champagne-rgb), 0.04) 42%,
         rgba(var(--color-black-rgb), 0.35)
     );
 
     box-shadow:
-        0 0 60px rgba(var(--color-gold-rgb), 0.1),
+        0 0 60px rgba(var(--color-champagne-rgb), 0.1),
         inset 0 0 50px rgba(var(--color-white-rgb), 0.025);
 }
 
 .tmo-passive__core span {
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
 
     font-family: var(--font-display);
     font-size: 95px;
@@ -1071,28 +1082,20 @@ a {
 
 .tmo-process-step::before {
     content: "";
-
     position: absolute;
-
     left: 0;
     top: -40px;
-
     width: 9px;
     height: 9px;
-
     border: 2px solid var(--color-paper);
-
     border-radius: 50%;
-
-    background: var(--color-gold);
-
-    box-shadow: 0 0 0 1px var(--color-gold);
+    background: var(--color-champagne);
+    box-shadow: 0 0 0 1px var(--color-champagne);
 }
 
 .tmo-process-step > span {
-    color: var(--color-gold-soft);
-
-    font-size: 10px;
+    color: var(--color-forest);
+    font-size: 8px;
     font-weight: 700;
     letter-spacing: 0.1em;
 }
@@ -1130,7 +1133,7 @@ a {
 }
 
 .tmo-testimonial__mark {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-family: var(--font-display);
     font-size: 150px;
@@ -1148,7 +1151,7 @@ a {
 }
 
 .tmo-testimonial__quote h2 em {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -1186,7 +1189,7 @@ a {
 
     margin-bottom: 25px;
 
-    color: var(--color-gold);
+    color: var(--color-champagne);
 }
 
 .testimonial-card__content {
@@ -1270,7 +1273,11 @@ a {
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(to top, rgba(var(--color-black-rgb), 0.25), transparent 45%);
+    background: linear-gradient(
+        to top,
+        rgba(var(--color-black-rgb), 0.25),
+        transparent 45%
+    );
 
     pointer-events: none;
 }
@@ -1299,7 +1306,7 @@ a {
 
 .tmo-insight__body > span,
 .tmo-insight-mini span {
-    color: var(--color-gold-soft);
+    color: var(--color-forest);
 
     font-size: 9px;
     font-weight: 700;
@@ -1376,7 +1383,7 @@ a {
 
 .tmo-insight-mini:hover {
     transform: translateX(6px);
-    border-color: var(--color-border-gold);
+    border-color: var(--color-border-green);
 }
 
 .tmo-insight-mini__image {
@@ -1429,12 +1436,12 @@ a {
     background:
         radial-gradient(
             circle at 50% 20%,
-            rgba(var(--color-gold-rgb), 0.15),
+            rgba(var(--color-champagne-rgb), 0.15),
             transparent 25%
         ),
         radial-gradient(
             circle at 20% 100%,
-            rgba(var(--color-green-rgb), 0.15),
+            rgba(var(--color-emerald-rgb), 0.15),
             transparent 30%
         ),
         #07090b;
@@ -1449,8 +1456,15 @@ a {
     opacity: 0.17;
 
     background-image:
-        linear-gradient(rgba(var(--color-white-rgb), 0.045) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(var(--color-white-rgb), 0.045) 1px, transparent 1px);
+        linear-gradient(
+            rgba(var(--color-white-rgb), 0.045) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(var(--color-white-rgb), 0.045) 1px,
+            transparent 1px
+        );
 
     background-size: 80px 80px;
 }
@@ -1492,7 +1506,7 @@ a {
 }
 
 .tmo-final-cta__content h2 em {
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
 
     font-family: var(--font-display);
     font-style: italic;
@@ -1546,10 +1560,10 @@ a {
 
     transform: translateX(-50%);
 
-    border: 1px solid rgba(var(--color-gold-rgb), 0.07);
+    border: 1px solid rgba(var(--color-champagne-rgb), 0.07);
     border-radius: 50%;
 
-    box-shadow: 0 0 160px rgba(var(--color-gold-rgb), 0.04);
+    box-shadow: 0 0 160px rgba(var(--color-champagne-rgb), 0.04);
 }
 
 .site-footer__grid {
@@ -1624,7 +1638,7 @@ a {
 }
 
 .site-footer a:not(.btn):hover {
-    color: var(--color-gold-bright);
+    color: var(--color-apricot);
     transform: translateX(3px);
 }
 
@@ -1650,7 +1664,7 @@ a {
 }
 
 .site-footer__social a:hover {
-    border-color: var(--color-gold);
+    border-color: var(--color-champagne);
     transform: translateY(-2px) !important;
 }
 
@@ -1845,7 +1859,7 @@ a {
         background:
             radial-gradient(
                 circle at 100% 0%,
-                rgba(var(--color-gold-rgb), 0.12),
+                rgba(var(--color-champagne-rgb), 0.12),
                 transparent 35%
             ),
             #0a0d0f;
@@ -1915,7 +1929,7 @@ a {
     }
 
     .site-nav__links > a.is-active {
-        color: var(--color-gold-bright);
+        color: var(--color-apricot);
     }
 
     .site-nav__links-footer {
@@ -2049,7 +2063,6 @@ a {
         display: none;
     }
 
-
     .tmo-intro,
     .tmo-capabilities,
     .tmo-work,
@@ -2115,7 +2128,7 @@ a {
     }
 
     .tmo-process__timeline {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 45px;
     }
 
@@ -2173,8 +2186,8 @@ a {
     }
 
     .site-footer__grid {
-        grid-template-columns: 1fr;
-        gap: 42px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 42px 24px;
         padding-bottom: 60px;
     }
 
@@ -2654,7 +2667,7 @@ a {
 
     background-image: linear-gradient(
         90deg,
-        rgba(var(--color-navy-rgb), 0.035) 1px,
+        rgba(var(--color-ink-rgb), 0.035) 1px,
         transparent 1px
     );
 
@@ -2682,7 +2695,7 @@ a {
 
     margin: 22px 0 0;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: clamp(48px, 6.5vw, 92px);
     line-height: 0.96;
@@ -2691,7 +2704,7 @@ a {
 
 .tmo-work__header h2 span {
     display: block;
-    color: var(--color-gold-light);
+    color: var(--color-ink-deep);
 }
 
 /* View all */
@@ -2703,7 +2716,7 @@ a {
 
     flex: 0 0 auto;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: 10px;
     font-weight: 700;
@@ -2720,7 +2733,7 @@ a {
     display: grid;
     place-items: center;
 
-    border: 1px solid rgba(var(--color-navy-rgb), 0.18);
+    border: 1px solid rgba(var(--color-ink-rgb), 0.18);
     border-radius: 50%;
 
     font-style: normal;
@@ -2737,10 +2750,9 @@ a {
 
 .tmo-work__view-all:hover i {
     color: #fff;
-    background: var(--color-navy);
+    background: var(--color-forest);
     transform: rotate(-45deg);
 }
-
 
 /* =========================================================
    08 / CLIENT STORIES — EDITORIAL TESTIMONIALS
@@ -2775,8 +2787,15 @@ a {
     opacity: 0.16;
 
     background-image:
-        linear-gradient(rgba(var(--color-white-rgb), 0.05) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(var(--color-white-rgb), 0.05) 1px, transparent 1px);
+        linear-gradient(
+            rgba(var(--color-white-rgb), 0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(var(--color-white-rgb), 0.05) 1px,
+            transparent 1px
+        );
 
     background-size: 70px 70px;
 }
@@ -2837,7 +2856,7 @@ a {
 }
 
 .tmo-testimonial__eyebrow {
-    color: var(--color-gold-light);
+    color: var(--color-champagne);
 
     font-size: 9px;
     font-weight: 700;
@@ -2884,7 +2903,7 @@ a {
 .tmo-testimonial__symbol span {
     display: block;
 
-    color: var(--color-gold);
+    color: var(--color-champagne);
 
     font-family: Georgia, serif;
     font-size: 150px;
@@ -2904,7 +2923,7 @@ a {
 }
 
 .tmo-testimonial__headline h2 em {
-    color: var(--color-gold-light);
+    color: var(--color-champagne);
     font-style: normal;
 }
 
@@ -2944,7 +2963,7 @@ a {
 }
 
 .tmo-testimonial-story__index span {
-    color: var(--color-gold);
+    color: var(--color-champagne);
 
     font-size: 10px;
     font-weight: 700;
@@ -2957,7 +2976,7 @@ a {
 
     margin-bottom: 17px;
 
-    color: var(--color-gold);
+    color: var(--color-champagne);
 }
 
 .tmo-testimonial-story__stars svg {
@@ -2993,7 +3012,7 @@ a {
 
     margin-top: 8px;
 
-    background: var(--color-gold);
+    background: var(--color-champagne);
 }
 
 .tmo-testimonial-story__author strong {
@@ -3071,7 +3090,7 @@ a {
     width: 1px;
     height: 100%;
 
-    background: rgba(var(--color-navy-rgb), 0.055);
+    background: rgba(var(--color-ink-rgb), 0.055);
 
     pointer-events: none;
 }
@@ -3093,7 +3112,7 @@ a {
 
     margin: 22px 0 0;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: clamp(48px, 6.2vw, 88px);
     line-height: 0.96;
@@ -3101,7 +3120,7 @@ a {
 }
 
 .tmo-insights__header h2 span {
-    color: var(--color-gold-light);
+    color: var(--color-ink-deep);
 }
 
 .tmo-insights__journal {
@@ -3109,7 +3128,7 @@ a {
     align-items: center;
     gap: 14px;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: 10px;
     font-weight: 700;
@@ -3126,7 +3145,7 @@ a {
     display: grid;
     place-items: center;
 
-    border: 1px solid rgba(var(--color-navy-rgb), 0.18);
+    border: 1px solid rgba(var(--color-ink-rgb), 0.18);
     border-radius: 50%;
 
     font-style: normal;
@@ -3143,7 +3162,7 @@ a {
 
 .tmo-insights__journal:hover i {
     color: #fff;
-    background: var(--color-navy);
+    background: var(--color-forest);
     transform: rotate(-45deg);
 }
 
@@ -3175,7 +3194,7 @@ a {
 
     overflow: hidden;
 
-    background: var(--color-navy);
+    background: var(--color-forest);
 }
 
 .tmo-insight-featured__media img {
@@ -3259,7 +3278,7 @@ a {
 }
 
 .tmo-insight-featured:hover .tmo-insight-featured__read i {
-    background: var(--color-gold);
+    background: var(--color-champagne);
     transform: rotate(-45deg);
 }
 
@@ -3274,7 +3293,7 @@ a {
 }
 
 .tmo-insight-featured__date {
-    color: var(--color-gold);
+    color: var(--color-champagne);
 
     font-size: 9px;
     font-weight: 700;
@@ -3287,7 +3306,7 @@ a {
 
     margin: 12px 0 10px;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: clamp(25px, 3vw, 39px);
     line-height: 1.08;
@@ -3308,7 +3327,7 @@ a {
 /* Article list */
 
 .tmo-insights__list {
-    border-top: 1px solid rgba(var(--color-navy-rgb), 0.16);
+    border-top: 1px solid rgba(var(--color-ink-rgb), 0.16);
 }
 
 .tmo-insight-row {
@@ -3325,7 +3344,7 @@ a {
     color: inherit;
     text-decoration: none;
 
-    border-bottom: 1px solid rgba(var(--color-navy-rgb), 0.13);
+    border-bottom: 1px solid rgba(var(--color-ink-rgb), 0.13);
 
     transition:
         padding 0.4s var(--ease),
@@ -3344,7 +3363,7 @@ a {
 
     padding-top: 22px;
 
-    color: var(--color-gold);
+    color: var(--color-champagne);
 
     font-size: 9px;
     font-weight: 700;
@@ -3357,7 +3376,7 @@ a {
 
     overflow: hidden;
 
-    background: var(--color-navy);
+    background: var(--color-forest);
 }
 
 .tmo-insight-row__image img {
@@ -3387,7 +3406,7 @@ a {
 .tmo-insight-row__content h3 {
     margin: 7px 0 0;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
     font-size: 15px;
     line-height: 1.35;
@@ -3401,9 +3420,9 @@ a {
     display: grid;
     place-items: center;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 
-    border: 1px solid rgba(var(--color-navy-rgb), 0.15);
+    border: 1px solid rgba(var(--color-ink-rgb), 0.15);
     border-radius: 50%;
 
     transition:
@@ -3418,7 +3437,7 @@ a {
 
 .tmo-insight-row:hover .tmo-insight-row__arrow {
     color: #fff;
-    background: var(--color-navy);
+    background: var(--color-forest);
     transform: rotate(-45deg);
 }
 
@@ -3444,13 +3463,13 @@ a {
     width: 45px;
     height: 1px;
 
-    background: var(--color-gold);
+    background: var(--color-champagne);
 }
 
 .tmo-insights__bottom-mark {
     margin-left: auto;
 
-    color: var(--color-navy);
+    color: var(--color-forest);
 }
 
 /* =========================================================
