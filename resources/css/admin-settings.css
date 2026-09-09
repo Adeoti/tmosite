@@ -1,0 +1,40 @@
+.admin-field-hint--intro {
+    margin-top: -8px;
+}
+
+.admin-stat-field-group {
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.admin-stat-field-group--last {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.admin-stat-field-group__label {
+    display: block;
+    margin-bottom: 14px;
+    color: var(--color-gold-soft);
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.tmo-form__row--3col {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.admin-form-card--spaced {
+    margin-top: 32px;
+}
+
+@media (max-width: 700px) {
+    .tmo-form__row--3col {
+        grid-template-columns: 1fr;
+    }
+}

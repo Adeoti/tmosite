@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,7 +27,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('apple-touch-icon.png') }}">
     <link rel="manifest" href="{{ asset('site.webmanifest') }}">
     <meta name="theme-color" content="#0B2545">
-    <link rel="alternate" type="application/rss+xml" title="{{ \App\Models\Setting::get('site_name') }} Blog" href="{{ route('blog.feed') }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ \App\Models\Setting::get('site_name') }} Blog"
+        href="{{ route('blog.feed') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
@@ -52,7 +54,10 @@
     @stack('structured-data')
     @stack('head')
 </head>
-<body>
+
+<body class="@yield('body_class', 'tmo-nav-dark')">
+    <x-page-loader />
+
     <x-site-nav />
 
     <main>
@@ -65,4 +70,5 @@
 
     @stack('scripts')
 </body>
+
 </html>

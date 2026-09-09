@@ -1,0 +1,15 @@
+.tmo-admin-login {
+    padding: 0 0 130px;
+    background: var(--color-paper);
+}
+
+.tmo-admin-login__inner {
+    max-width: 440px;
+    margin-inline: auto;
+}
+
+@media (max-width: 600px) {
+    .tmo-admin-login {
+        padding-bottom: 90px;
+    }
+}

@@ -1,0 +1,269 @@
+.tmo-contact {
+    padding: 130px 0;
+    background: var(--color-paper);
+}
+
+.tmo-contact__grid {
+    display: grid;
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    gap: 50px;
+    align-items: start;
+}
+
+.tmo-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.tmo-contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 26px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .4s var(--ease), box-shadow .4s ease, border-color .3s ease;
+}
+
+.tmo-contact-card:hover {
+    transform: translateX(6px);
+    border-color: var(--color-border-gold);
+    box-shadow: var(--shadow-soft);
+}
+
+.tmo-contact-card__icon {
+    flex: 0 0 auto;
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+}
+
+.tmo-contact-card__icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.tmo-contact-card__icon--whatsapp {
+    background: var(--color-whatsapp);
+}
+
+.tmo-contact-card__icon--navy {
+    background: var(--color-navy);
+}
+
+.tmo-contact-card__icon--gold {
+    background: var(--color-gold);
+}
+
+.tmo-contact-card h3 {
+    margin: 0 0 3px;
+    color: var(--color-navy);
+    font-size: 15px;
+}
+
+.tmo-contact-card p {
+    margin: 0 0 6px;
+    color: var(--color-muted);
+    font-size: 13px;
+}
+
+.tmo-contact-card span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-gold-soft);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+
+.tmo-form-card,
+.tmo-form-card.tmo-card {
+    padding: 40px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+}
+
+.tmo-form__field {
+    margin-bottom: 20px;
+}
+
+.tmo-form__row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.tmo-form__field label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--color-navy);
+    font-family: var(--font-heading);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.tmo-form__field input,
+.tmo-form__field select,
+.tmo-form__field textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 14px;
+    transition: border-color .3s ease, background .3s ease;
+}
+
+.tmo-form__field input:focus,
+.tmo-form__field select:focus,
+.tmo-form__field textarea:focus {
+    outline: none;
+    border-color: var(--color-gold);
+    background: #fff;
+}
+
+.tmo-form__field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.tmo-form__submit {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.tmo-form__note {
+    margin: 18px 0 0;
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 12px;
+}
+
+.tmo-form__note a {
+    color: var(--color-gold-soft);
+    font-weight: 600;
+}
+
+.tmo-form-alert {
+    padding: 16px 18px;
+    margin-bottom: 24px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+}
+
+.tmo-form-alert p {
+    margin: 0 0 6px;
+}
+
+.tmo-form-alert ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.tmo-form-alert--success {
+    background: rgba(var(--color-green-rgb), .1);
+    border: 1px solid rgba(var(--color-green-rgb), .3);
+    color: var(--color-green-dark);
+}
+
+.tmo-form-alert--error {
+    background: rgba(var(--color-status-error-rgb), .08);
+    border: 1px solid rgba(var(--color-status-error-rgb), .28);
+    color: var(--color-status-error-text-dark);
+}
+
+.tmo-booking {
+    padding: 0 0 130px;
+    background: var(--color-paper);
+}
+
+.tmo-booking__inner {
+    max-width: 680px;
+    margin-inline: auto;
+}
+
+.tmo-thank-you {
+    min-height: 68vh;
+    display: flex;
+    align-items: center;
+    padding: 150px 0;
+    background: var(--color-paper);
+}
+
+.tmo-thank-you__inner {
+    max-width: 560px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.tmo-thank-you__icon {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-navy);
+    color: var(--color-gold-bright);
+}
+
+.tmo-thank-you__icon svg {
+    width: 38px;
+    height: 38px;
+}
+
+.tmo-thank-you h1 {
+    margin: 0 0 18px;
+    color: var(--color-navy);
+    font-size: clamp(30px, 4vw, 42px);
+    letter-spacing: -.03em;
+}
+
+.tmo-thank-you p {
+    margin: 0 0 32px;
+    color: var(--color-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.tmo-thank-you__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+@media (max-width: 900px) {
+    .tmo-contact__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .tmo-contact,
+    .tmo-booking {
+        padding: 90px 0;
+    }
+
+    .tmo-form-card {
+        padding: 28px;
+    }
+
+    .tmo-form__row {
+        grid-template-columns: 1fr;
+    }
+}

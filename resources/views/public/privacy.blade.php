@@ -1,13 +1,21 @@
 @extends('layouts.app')
 
 @section('title', 'Privacy Policy')
+@section('body_class', 'tmo-nav-dark')
 
 @section('content')
-    <section class="section legal-page">
-        <div class="container" style="max-width: 780px;">
-            <div class="eyebrow">Legal</div>
-            <h1>Privacy Policy</h1>
-            <p class="legal-page__updated">Last updated: {{ now()->format('F Y') }}</p>
+
+<x-page-hero eyebrow="Legal" variant="dark">
+    <h1 data-animate="up">Privacy Policy</h1>
+    <p class="tmo-page-hero__subhead" data-animate="up" data-animate-delay="120">
+        Last updated: {{ now()->format('F Y') }}
+    </p>
+</x-page-hero>
+
+<section class="tmo-legal">
+    <div class="container tmo-legal__inner">
+
+        <div class="tmo-legal__card" data-animate="up">
 
             <h2>Information We Collect</h2>
             <p>When you book a consultation, send a message, or chat with us on WhatsApp, we collect the details you provide, such as your name, email address, phone number and project information, so we can respond to your request.</p>
@@ -29,6 +37,10 @@
 
             <h2>Contact Us</h2>
             <p>Questions about this policy can be sent to {{ \App\Models\Setting::get('contact_email') }} or via WhatsApp at {{ \App\Models\Setting::get('whatsapp_display') }}.</p>
+
         </div>
-    </section>
+
+    </div>
+</section>
+
 @endsection

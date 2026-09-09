@@ -1,0 +1,61 @@
+.tmo-page-cta {
+    position: relative;
+    padding: 130px 0;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(var(--color-gold-rgb), .16),
+            transparent 26%
+        ),
+        var(--color-black);
+}
+
+.tmo-page-cta__grid {
+    position: absolute;
+    inset: 0;
+    opacity: .15;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(var(--color-white-rgb), .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--color-white-rgb), .05) 1px, transparent 1px);
+    background-size: 80px 80px;
+}
+
+.tmo-page-cta__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 640px;
+    margin-inline: auto;
+}
+
+.tmo-page-cta h2 {
+    margin: 0 0 18px;
+    color: #fff;
+    font-size: clamp(34px, 5vw, 54px);
+    line-height: 1.05;
+    letter-spacing: -.045em;
+}
+
+.tmo-page-cta p {
+    margin: 0 auto 32px;
+    max-width: 500px;
+    color: rgba(var(--color-white-rgb), .58);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.tmo-page-cta__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+@media (max-width: 600px) {
+    .tmo-page-cta {
+        padding: 90px 0;
+    }
+}

@@ -1,13 +1,21 @@
 @extends('layouts.app')
 
 @section('title', 'Terms of Service')
+@section('body_class', 'tmo-nav-dark')
 
 @section('content')
-    <section class="section legal-page">
-        <div class="container" style="max-width: 780px;">
-            <div class="eyebrow">Legal</div>
-            <h1>Terms of Service</h1>
-            <p class="legal-page__updated">Last updated: {{ now()->format('F Y') }}</p>
+
+<x-page-hero eyebrow="Legal" variant="dark">
+    <h1 data-animate="up">Terms of Service</h1>
+    <p class="tmo-page-hero__subhead" data-animate="up" data-animate-delay="120">
+        Last updated: {{ now()->format('F Y') }}
+    </p>
+</x-page-hero>
+
+<section class="tmo-legal">
+    <div class="container tmo-legal__inner">
+
+        <div class="tmo-legal__card" data-animate="up">
 
             <h2>Agreement to Terms</h2>
             <p>By using this website or engaging TMO Ultimate Innovations Ltd. for services, you agree to the following terms.</p>
@@ -29,6 +37,10 @@
 
             <h2>Contact Us</h2>
             <p>Questions about these terms can be sent to {{ \App\Models\Setting::get('contact_email') }} or via WhatsApp at {{ \App\Models\Setting::get('whatsapp_display') }}.</p>
+
         </div>
-    </section>
+
+    </div>
+</section>
+
 @endsection

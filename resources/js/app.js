@@ -6,6 +6,10 @@ import { initLightbox } from './modules/lightbox';
 import { initFormSubmitState } from './modules/form-submit-state';
 import { initRichEditor } from './modules/rich-editor';
 import { initHeroCarousel } from './modules/hero-carousel';
+import { initPageLoader } from './modules/page-loader';
+import { initHeroParallax } from './modules/hero-parallax';
+
+initPageLoader();
 
 document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
@@ -16,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initFormSubmitState();
     initRichEditor();
     initHeroCarousel();
+    initHeroParallax();
 });

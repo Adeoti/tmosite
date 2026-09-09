@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('title', $post->metaTitle())
@@ -6,6 +5,7 @@
 @section('canonical', $post->canonical_url ?: route('blog.show', $post))
 @section('og_type', 'article')
 @section('og_image', $post->metaImage())
+@section('body_class', 'tmo-nav-dark')
 
 @push('structured-data')
     @php
@@ -36,68 +36,87 @@
 @endpush
 
 @section('content')
-    <article class="section blog-post">
-        <div class="container" style="max-width: 780px;">
-            <div class="breadcrumb" data-animate="fade">
-                <a href="{{ route('blog.index') }}">Blog</a>
-                @if ($post->category)
-                    <span>/</span>
-                    <span>{{ $post->category->name }}</span>
-                @endif
-            </div>
 
-            <h1 data-animate="up">{{ $post->title }}</h1>
+<x-page-hero variant="dark">
 
-            <div class="blog-post__meta" data-animate="up" data-animate-delay="80">
-                <span>{{ $post->author_name ?? optional($post->author)->name }}</span>
-                <span>&middot;</span>
-                <span>{{ optional($post->published_at)->format('F d, Y') }}</span>
-                <span>&middot;</span>
-                <span>{{ $post->reading_minutes }} min read</span>
-            </div>
+    <div class="tmo-breadcrumb" data-animate="fade">
+        <a href="{{ route('blog.index') }}">Blog</a>
 
-            @if ($post->featured_image)
-                <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" class="blog-post__cover" data-animate="zoom">
-            @endif
+        @if ($post->category)
+            <span>/</span>
+            <span>{{ $post->category->name }}</span>
+        @endif
+    </div>
 
-            <div class="blog-post__content" data-animate="up">
-                {!! $post->content !!}
-            </div>
+    <h1 data-animate="up">{{ $post->title }}</h1>
 
-            @if ($post->tags->isNotEmpty())
-                <div class="blog-post__tags">
-                    @foreach ($post->tags as $tag)
-                        <span class="blog-post__tag">{{ $tag->name }}</span>
-                    @endforeach
-                </div>
-            @endif
+    <div class="tmo-blog-post__meta" data-animate="up" data-animate-delay="80">
+        <span>{{ $post->author_name ?? optional($post->author)->name }}</span>
+        <span>&middot;</span>
+        <span>{{ optional($post->published_at)->format('F d, Y') }}</span>
+        <span>&middot;</span>
+        <span>{{ $post->reading_minutes }} min read</span>
+    </div>
+
+</x-page-hero>
+
+<article class="tmo-blog-post">
+    <div class="container tmo-blog-post__inner">
+
+        @if ($post->featured_image)
+            <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}" class="tmo-blog-post__cover" data-animate="zoom">
+        @endif
+
+        <div class="tmo-blog-post__content" data-animate="up">
+            {!! $post->content !!}
         </div>
-    </article>
 
-    @if ($related->isNotEmpty())
-        <section class="section" style="background: #F5F6F9;">
-            <div class="container">
-                <x-section-heading eyebrow="Keep Reading" align="left">
-                    Related articles
-                </x-section-heading>
-                <div class="grid grid-3" style="margin-top: 40px;">
-                    @foreach ($related as $item)
-                        <a href="{{ route('blog.show', $item) }}" class="blog-card card" data-animate="up">
-                            @if ($item->featured_image)
-                                <img src="{{ asset('storage/' . $item->featured_image) }}" alt="{{ $item->title }}" loading="lazy">
-                            @endif
-                            <div class="blog-card__body">
-                                <h3>{{ $item->title }}</h3>
-                                <p>{{ $item->excerpt }}</p>
-                            </div>
-                        </a>
-                    @endforeach
-                </div>
+        @if ($post->tags->isNotEmpty())
+
+            <div class="tmo-blog-post__tags">
+
+                @foreach ($post->tags as $tag)
+                    <span class="tmo-blog-post__tag">{{ $tag->name }}</span>
+                @endforeach
+
             </div>
-        </section>
-    @endif
 
-    <x-cta-band title="Have a project in mind?" subtitle="Book a free consultation and let's talk it through.">
-        <a href="{{ route('booking') }}" class="btn btn-accent">Book a Free Consultation</a>
-    </x-cta-band>
+        @endif
+
+    </div>
+</article>
+
+@if ($related->isNotEmpty())
+
+    <section class="tmo-blog-related">
+        <div class="container">
+
+            <x-section-heading eyebrow="KEEP READING" align="left">
+                Related articles
+            </x-section-heading>
+
+            <div class="tmo-page-grid tmo-page-grid--3">
+
+                @foreach ($related as $item)
+                    <x-blog-card :post="$item" />
+                @endforeach
+
+            </div>
+
+        </div>
+    </section>
+
+@endif
+
+<x-cta-band title="Have a project in mind?" subtitle="Book a free consultation and let's talk it through.">
+    <a href="{{ route('booking') }}" class="tmo-btn tmo-btn--gold">
+        Book a Free Consultation
+
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14"/>
+            <path d="m13 6 6 6-6 6"/>
+        </svg>
+    </a>
+</x-cta-band>
+
 @endsection

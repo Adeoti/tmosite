@@ -1,0 +1,113 @@
+.tmo-page-hero {
+    position: relative;
+    padding: 190px 0 90px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.tmo-page-hero--paper {
+    background: var(--color-paper);
+    color: var(--color-ink);
+}
+
+.tmo-page-hero--dark {
+    background:
+        radial-gradient(
+            circle at 78% 30%,
+            rgba(var(--color-gold-rgb), .14),
+            transparent 26%
+        ),
+        var(--color-black);
+    color: #fff;
+}
+
+.tmo-page-hero__grid {
+    position: absolute;
+    inset: 0;
+    opacity: .18;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(var(--color-navy-rgb), .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--color-navy-rgb), .05) 1px, transparent 1px);
+    background-size: 80px 80px;
+    mask-image: linear-gradient(to bottom, #000 0%, transparent 85%);
+}
+
+.tmo-page-hero--dark .tmo-page-hero__grid {
+    opacity: .16;
+    background-image:
+        linear-gradient(rgba(var(--color-white-rgb), .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(var(--color-white-rgb), .05) 1px, transparent 1px);
+}
+
+.tmo-page-hero__inner {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin-inline: auto;
+}
+
+.tmo-kicker--center {
+    justify-content: center;
+}
+
+.tmo-page-hero h1 {
+    margin: 26px 0 0;
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.02;
+    letter-spacing: -.05em;
+}
+
+.tmo-page-hero--paper h1 {
+    color: var(--color-navy);
+}
+
+.tmo-page-hero--dark h1 {
+    color: #fff;
+}
+
+.tmo-page-hero__subhead {
+    max-width: 620px;
+    margin: 26px auto 0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.tmo-page-hero--paper .tmo-page-hero__subhead {
+    color: var(--color-muted);
+}
+
+.tmo-page-hero--dark .tmo-page-hero__subhead {
+    color: rgba(var(--color-white-rgb), .62);
+}
+
+.tmo-page-hero__actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 34px;
+}
+
+@media (max-width: 600px) {
+    .tmo-page-hero {
+        padding: 150px 0 70px;
+    }
+}
+
+.tmo-page-hero__icon {
+    width: 84px;
+    height: 84px;
+    margin: 0 auto 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(var(--color-gold-rgb), .12);
+    border: 1px solid rgba(var(--color-gold-rgb), .3);
+    color: var(--color-gold-bright);
+}
+
+.tmo-page-hero__icon svg {
+    width: 36px;
+    height: 36px;
+}

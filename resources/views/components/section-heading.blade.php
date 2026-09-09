@@ -1,11 +1,11 @@
 @props(['eyebrow' => null, 'align' => 'left'])
 
-<div class="section-heading section-heading--{{ $align }}" data-animate="up">
+<div class="tmo-page-section-head tmo-page-section-head--{{ $align }}">
+
     @if ($eyebrow)
-        <div class="eyebrow" style="{{ $align === 'center' ? 'justify-content: center;' : '' }}">{{ $eyebrow }}</div>
+        <span class="tmo-section-number">{{ $eyebrow }}</span>
     @endif
+
     <h2>{{ $slot }}</h2>
-    @isset($description)
-        <p class="section-heading__description">{{ $description }}</p>
-    @endisset
+
 </div>

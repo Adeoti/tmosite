@@ -1,0 +1,26 @@
+@media (max-width: 960px) {
+    .site-nav__links {
+        transform: translateX(105%);
+        visibility: hidden;
+    }
+
+    body.tmo-nav-open .site-nav__links,
+    .site-nav__links.is-open {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    .site-nav__overlay {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .site-nav__overlay.is-open {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    body.tmo-nav-open {
+        overflow: hidden;
+    }
+}

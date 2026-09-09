@@ -1,5 +1,5 @@
 @if ($errors->any())
-    <div class="form-alert form-alert--error">
+    <div class="tmo-form-alert tmo-form-alert--error">
         <p>Please fix the following:</p>
         <ul>
             @foreach ($errors->all() as $error)
@@ -10,13 +10,14 @@
 @endif
 
 <div class="admin-form-card">
-    <h3 style="margin-top: 0;">Content</h3>
+    <h3 class="admin-form-card__title">Content</h3>
 
     <div class="tmo-form__row">
         <div class="tmo-form__field">
             <label for="title">Title</label>
             <input type="text" id="title" name="title" value="{{ old('title', $post->title ?? '') }}" required>
         </div>
+
         <div class="tmo-form__field">
             <label for="blog_category_id">Category</label>
             <select id="blog_category_id" name="blog_category_id">
@@ -46,12 +47,14 @@
 
     <div class="tmo-form__field">
         <label for="featured_image">Featured Image</label>
+
         @if (!empty($post->featured_image))
             <div class="admin-current-image">
                 <img src="{{ asset('storage/' . $post->featured_image) }}" alt="{{ $post->title }}">
-                <span style="font-size: 13px; color: var(--color-muted);">Current featured image. Upload a new file to replace it.</span>
+                <span>Current featured image. Upload a new file to replace it.</span>
             </div>
         @endif
+
         <input type="file" id="featured_image" name="featured_image" accept="image/*">
     </div>
 
@@ -60,6 +63,7 @@
             <label for="tags">Tags (comma separated)</label>
             <input type="text" id="tags" name="tags" value="{{ old('tags', isset($post) ? $post->tags->pluck('name')->implode(', ') : '') }}" placeholder="Shopify, Automation, Case Study">
         </div>
+
         <div class="tmo-form__field">
             <label for="author_name">Author Name (optional — defaults to your admin name)</label>
             <input type="text" id="author_name" name="author_name" value="{{ old('author_name', $post->author_name ?? '') }}">
@@ -74,6 +78,7 @@
                 <option value="published" @selected(old('status', $post->status ?? 'draft') === 'published')>Published</option>
             </select>
         </div>
+
         <div class="tmo-form__field">
             <label for="published_at">Published Date (optional — set to now automatically when you publish)</label>
             <input type="datetime-local" id="published_at" name="published_at" value="{{ old('published_at', !empty($post->published_at) ? $post->published_at->format('Y-m-d\TH:i') : '') }}">
@@ -87,7 +92,7 @@
 </div>
 
 <div class="admin-form-card">
-    <h3 style="margin-top: 0;">SEO</h3>
+    <h3 class="admin-form-card__title">SEO</h3>
 
     <div class="tmo-form__field">
         <label for="meta_title">Meta Title (optional — defaults to the post title)</label>
@@ -104,6 +109,7 @@
             <label for="canonical_url">Canonical URL (optional)</label>
             <input type="url" id="canonical_url" name="canonical_url" value="{{ old('canonical_url', $post->canonical_url ?? '') }}">
         </div>
+
         <div class="tmo-form__field">
             <label for="og_image">Social Share Image (optional — defaults to the featured image)</label>
             <input type="file" id="og_image" name="og_image" accept="image/*">

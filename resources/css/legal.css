@@ -1,0 +1,52 @@
+.tmo-legal {
+    padding: 130px 0 150px;
+    background: var(--color-paper);
+}
+
+.tmo-legal__inner {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+.tmo-legal__card {
+    padding: 56px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: #fff;
+    box-shadow: var(--shadow-soft);
+}
+
+.tmo-legal__card h2 {
+    margin: 0 0 14px;
+    color: var(--color-navy);
+    font-size: 20px;
+    letter-spacing: -.02em;
+}
+
+.tmo-legal__card h2:not(:first-child) {
+    margin-top: 42px;
+    padding-top: 42px;
+    border-top: 1px solid var(--color-border);
+}
+
+.tmo-legal__card p {
+    margin: 0;
+    color: var(--color-ink-soft);
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+@media (max-width: 700px) {
+    .tmo-legal {
+        padding: 90px 0 100px;
+    }
+
+    .tmo-legal__card {
+        padding: 34px 26px;
+    }
+
+    .tmo-legal__card h2:not(:first-child) {
+        margin-top: 34px;
+        padding-top: 34px;
+    }
+}

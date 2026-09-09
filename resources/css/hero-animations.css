@@ -1,0 +1,73 @@
+@keyframes tmoReveal {
+    from {
+        opacity: 0;
+        transform: translateY(28px);
+        filter: blur(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+@keyframes tmoShimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+}
+
+.tmo-hero__content > * {
+    opacity: 0;
+    animation: tmoReveal 1.1s var(--ease) forwards;
+}
+
+.tmo-kicker {
+    animation-delay: .15s;
+}
+
+.tmo-hero h1 {
+    animation-delay: .30s;
+}
+
+.tmo-hero__content > p {
+    animation-delay: .50s;
+}
+
+.tmo-hero__actions {
+    animation-delay: .68s;
+}
+
+.tmo-hero__visual {
+    opacity: 0;
+    animation: tmoReveal 1.3s var(--ease) forwards;
+    animation-delay: .55s;
+}
+
+.tmo-hero h1 span {
+    background: linear-gradient(
+        100deg,
+        var(--color-gold-soft) 20%,
+        var(--color-gold-bright) 40%,
+        #fff 50%,
+        var(--color-gold-bright) 60%,
+        var(--color-gold-soft) 80%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: tmoShimmer 5s linear infinite 1.8s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tmo-hero__content > *,
+    .tmo-hero__visual,
+    .tmo-hero h1 span {
+        animation: none;
+        opacity: 1;
+    }
+}
+
+.tmo-hero__orb {
+    transition: transform .6s cubic-bezier(.22, 1, .36, 1);
+}

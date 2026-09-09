@@ -1,0 +1,152 @@
+.tmo-work-orbit {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 50px 34px;
+}
+
+.tmo-orbit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+}
+
+.tmo-orbit-card__circle {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color-navy);
+    box-shadow: 0 25px 60px rgba(var(--color-navy-rgb), .16);
+    transition: transform .6s var(--ease), box-shadow .6s var(--ease);
+}
+
+.tmo-orbit-card__circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s var(--ease), filter .6s ease;
+}
+
+.tmo-orbit-card__ring {
+    position: absolute;
+    inset: -1px;
+    border-radius: 50%;
+    border: 1px solid rgba(var(--color-gold-rgb), 0);
+    box-shadow: inset 0 0 0 1px rgba(var(--color-white-rgb), .12);
+    transition: border-color .6s ease, transform .8s var(--ease);
+}
+
+.tmo-orbit-card__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(8, 27, 46, 0);
+    opacity: 0;
+    transition: opacity .5s ease, background .5s ease;
+}
+
+.tmo-orbit-card__overlay i {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-gold);
+    color: var(--color-black);
+    transform: scale(.6);
+    transition: transform .5s var(--ease);
+}
+
+.tmo-orbit-card__overlay svg {
+    width: 20px;
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__circle {
+    transform: translateY(-8px);
+    box-shadow: 0 34px 80px rgba(var(--color-navy-rgb), .24);
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__circle img {
+    transform: scale(1.08);
+    filter: saturate(1.05);
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__ring {
+    border-color: rgba(var(--color-gold-rgb), .55);
+    transform: scale(1.045);
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__overlay {
+    opacity: 1;
+    background: rgba(8, 27, 46, .32);
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__overlay i {
+    transform: scale(1);
+}
+
+.tmo-orbit-card__meta {
+    position: relative;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.tmo-orbit-card__category {
+    display: block;
+    color: var(--color-gold);
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.tmo-orbit-card__meta h3 {
+    margin: 10px 0 0;
+    color: var(--color-navy);
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -.02em;
+    transition: color .35s ease;
+}
+
+.tmo-orbit-card:hover .tmo-orbit-card__meta h3 {
+    color: var(--color-gold-soft);
+}
+
+.tmo-orbit-card__number {
+    display: block;
+    margin-top: 8px;
+    color: #9aa1a4;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .12em;
+}
+
+@media (max-width: 1200px) {
+    .tmo-work-orbit {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 46px 28px;
+    }
+}
+
+@media (max-width: 860px) {
+    .tmo-work-orbit {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 42px 24px;
+    }
+}
+
+@media (max-width: 520px) {
+    .tmo-work-orbit {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin-inline: auto;
+        gap: 48px;
+    }
+}
